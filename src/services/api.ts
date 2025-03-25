@@ -10,50 +10,16 @@ const api = axios.create({
   },
 });
 
+// TODO: Implement the following API service functions:
+// 1. getAllUsers: Fetch all users
+// 2. getUserById: Fetch a single user by ID
+// 3. createUser: Create a new user
+// 4. updateUser: Update an existing user
+// 5. deleteUser: Delete a user
+// 6. handleApiError: Implement error handling
+
 export const userService = {
-  getAllUsers: async (): Promise<User[]> => {
-    try {
-      const response = await api.get('/users');
-      return response.data;
-    } catch (error) {
-      throw handleApiError(error);
-    }
-  },
-
-  getUserById: async (id: string): Promise<User> => {
-    try {
-      const response = await api.get(`/users/${id}`);
-      return response.data;
-    } catch (error) {
-      throw handleApiError(error);
-    }
-  },
-
-  createUser: async (user: CreateUserInput): Promise<User> => {
-    try {
-      const response = await api.post('/users', user);
-      return response.data;
-    } catch (error) {
-      throw handleApiError(error);
-    }
-  },
-
-  updateUser: async (user: UpdateUserInput): Promise<User> => {
-    try {
-      const response = await api.put(`/users/${user.id}`, user);
-      return response.data;
-    } catch (error) {
-      throw handleApiError(error);
-    }
-  },
-
-  deleteUser: async (id: string): Promise<void> => {
-    try {
-      await api.delete(`/users/${id}`);
-    } catch (error) {
-      throw handleApiError(error);
-    }
-  },
+  // Implement your API service methods here
 };
 
 const handleApiError = (error: any): ApiError => {

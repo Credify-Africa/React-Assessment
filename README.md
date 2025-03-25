@@ -58,13 +58,13 @@ DELETE /users/:id
 
 ```
 src/
-  ├── components/     # Reusable components
-  ├── hooks/         # Custom hooks
-  ├── services/      # API services
-  ├── types/         # TypeScript types/interfaces
-  ├── utils/         # Utility functions
-  ├── tests/         # Test files
-  └── App.tsx        # Main application component
+  ├── components/     # Create your reusable components here
+  ├── hooks/         # Create your custom hooks here
+  ├── services/      # Implement your API services here
+  ├── types/         # Define your TypeScript types here
+  ├── utils/         # Add any utility functions here
+  ├── tests/         # Write your tests here
+  └── App.tsx        # Implement your main application component
 ```
 
 ## Tasks

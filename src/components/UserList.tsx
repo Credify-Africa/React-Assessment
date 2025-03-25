@@ -9,6 +9,14 @@ interface UserListProps {
   error: Error | null;
 }
 
+// TODO: Implement the UserList component with the following features:
+// 1. Display users in a table format
+// 2. Show loading state
+// 3. Show error state
+// 4. Handle empty state
+// 5. Implement edit and delete actions
+// 6. Add proper styling using Tailwind CSS
+
 export const UserList: React.FC<UserListProps> = ({
   users,
   onEdit,
